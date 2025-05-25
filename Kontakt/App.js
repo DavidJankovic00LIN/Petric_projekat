@@ -90,7 +90,7 @@ function App() {
                             </div>
                             <div>
                                 <h3 className="text-lg font-medium text-gray-800">Adresa</h3>
-                                <p className="text-gray-600">Negde u Valjevo</p>
+                                <p className="text-gray-600">Miljakovačko brdo 41a</p>
                             </div>
                         </div>
 
@@ -113,7 +113,7 @@ function App() {
                             </div>
                             <div>
                                 <h3 className="text-lg font-medium text-gray-800">Telefon</h3>
-                                <p className="text-gray-600">+381 69 696969</p>
+                                <p className="text-gray-600">+381 638086144</p>
                             </div>
                         </div>
 
@@ -142,12 +142,17 @@ function App() {
 
 
                           <div class="mt-8">
-                            <h3 class="font-medium text-gray-800 mb-4">Radno vreme</h3>
+                            <h3 class="font-medium text-gray-800 ">Matični broj : <span class="space-y-2 text-gray-600">22021591</span> </h3> 
+                            
+                             
+                               
+                         
+                            <br/>
+                            <h3 class="font-medium text-gray-800 mb-4">PIB : <span class="space-y-2 text-gray-600">114422858</span></h3>
                             <ul class="space-y-2 text-gray-600">
-                              <li class="flex justify-between">
-                                <span>Ponedeljak - Petak</span>
-                                <span>9:00- 17:00</span>
-                              </li>
+                            
+                                
+                               
                             </ul>
                           
                           
@@ -159,31 +164,22 @@ function App() {
                 </div>
                 {/*Foktakt forma 2/3 */}
             <div class="lg:w-2/3 bg-white rounded-lg-shadow-md p-9">
-              <h2 class="text-2xl font-semibold text-gray-800 mb-">Oistavite nam poruku</h2>
+              <h2 class="text-2xl font-semibold text-gray-800 mb-">Kako do nas?</h2>
               
    
   
-    <form className="flex flex-col gap-4">
-      <input
-        type="email"
-        placeholder="Email"
-        className="border rounded px-4 py-2 w-full focus:outline-none"
-      />
-      <input
-        type="User_name"
-        placeholder="Vase Ime"
-        className="border rounded px-4 py-2 w-full focus:outline-none"
-      />
-      
-
-      <button
-        type="submit"
-        className="px-6 py-2 rounded text-white bg-blue-600 hover:bg-blue-700"
-      >
-        Posalji poruku
-      </button>
-    </form>
- 
+              <div class="mapouter">
+          </div>
+        
+          <iframe
+  width="600"
+  height="450"
+  style={{ border: 0 }}
+  loading="lazy"
+  allowFullScreen
+  referrerPolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3085999999997!2d20.44683303562437!3d44.73857908156135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a71835ace020d%3A0xe93f4ba73d93126e!2zTWlsamFrb3ZhxI1rbyBicmRvIDQxYSwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1748201487368!5m2!1ssr!2srs&style=feature:poi|visibility:off"
+/>
             
             </div>
 
