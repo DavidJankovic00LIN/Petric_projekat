@@ -54,139 +54,140 @@ function App() {
       {/* MAIN - Glavni sadržaj stranice */}
       <main className="flex flex-col items-center justify-center">
         {/* Hero sekcija */}
+
+
         <section className="bg-gray-100 py-20 px-4 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-           Kontakt
-          </h1>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-           Za sve dodatne informacije budite slobodni da nas kontaktirate putem kontakt forme ili puten nekih od nasih drugi mreza
-          </p>
-        </section>
+  <h1 className="text-4xl font-bold text-gray-900 mb-4">
+    Kontakt
+  </h1>
+  <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+    Za sve dodatne informacije budite slobodni da nas kontaktirate putem kontakt forme ili putem nekih od naših društvenih mreža
+  </p>
+</section>
 
+{/* Sekcija sa kontakt informacijama i mapom */}
+<section className="py-16 w-full bg-gray-200">
+{/*Kontakt sekcija */ }
+<div class="container mx-auto px-4 py-12">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
     
-              {/*Sekcija sa mrezama*/}
-        <section className="py-16 w-full bg-grey-200">
-            <div className="flex flex-col lg:flex-row gap-8 p-2">
-                {/*Kontakt ifnormacije */}
-                <div className="lg:w-1/3 bg-white rounded-lg shadow-md p-8">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Nasi podaci</h2>
-                    <div className="space-y-6">
-                        <div className="flex items-start">
-                            <div className="bg-blue-100 p-3 rounded-full mr-4">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    className="h-6 w-6 text-blue-600" 
-                                    fill="none" 
-                                    viewBox="0 0 24 24" 
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                >
-                                    <path 
-                                        strokeLinecap="round" 
-                                        strokeLinejoin="round" 
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                                    />
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 className="text-lg font-medium text-gray-800">Adresa</h3>
-                                <p className="text-gray-600">Miljakovačko brdo 41a</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start">
-                            <div className="bg-blue-100 p-3 rounded-full mr-4">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    className="h-6 w-6 text-blue-600" 
-                                    fill="none" 
-                                    viewBox="0 0 24 24" 
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                >
-                                    <path 
-                                        strokeLinecap="round" 
-                                        strokeLinejoin="round" 
-                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" 
-                                    />
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 className="text-lg font-medium text-gray-800">Telefon</h3>
-                                <p className="text-gray-600">+381 638086144</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start">
-                            <div className="bg-blue-100 p-3 rounded-full mr-4">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    className="h-6 w-6 text-blue-600" 
-                                    fill="none" 
-                                    viewBox="0 0 24 24" 
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                >
-                                    <path 
-                                        strokeLinecap="round" 
-                                        strokeLinejoin="round" 
-                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" 
-                                    />
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 className="text-lg font-medium text-gray-800">Email</h3>
-                                <p className="text-gray-600">primer@gmail.com</p>
-                            </div>
-                        </div>
-
-
-                          <div class="mt-8">
-                            <h3 class="font-medium text-gray-800 ">Matični broj : <span class="space-y-2 text-gray-600">22021591</span> </h3> 
-                            
-                             
-                               
-                         
-                            <br/>
-                            <h3 class="font-medium text-gray-800 mb-4">PIB : <span class="space-y-2 text-gray-600">114422858</span></h3>
-                            <ul class="space-y-2 text-gray-600">
-                            
-                                
-                               
-                            </ul>
-                          
-                          
-                          </div>
-
-
-                    </div>
-                    
-                </div>
-                {/*Foktakt forma 2/3 */}
-            <div class="lg:w-2/3 bg-white rounded-lg-shadow-md p-9">
-              <h2 class="text-2xl font-semibold text-gray-800 mb-">Kako do nas?</h2>
-              
-   
-  
-              <div class="mapouter">
+    {/*Forma 1/3 - osnovne informacije*/}
+    <div class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-6">Naši podaci</h2>
+      
+      <div class="space-y-6">
+    
+        <div class="flex items-start">
+          <div class="bg-blue-100 p-3 rounded-full mr-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            </svg>
           </div>
-        
-          <iframe
-  width="600"
-  height="450"
-  style={{ border: 0 }}
-  loading="lazy"
-  allowFullScreen
-  referrerPolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3085999999997!2d20.44683303562437!3d44.73857908156135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a71835ace020d%3A0xe93f4ba73d93126e!2zTWlsamFrb3ZhxI1rbyBicmRvIDQxYSwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1748201487368!5m2!1ssr!2srs&style=feature:poi|visibility:off"
-/>
-            
-            </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800">Adresa</h3>
+            <p class="text-gray-600">Miljakovačko brdo 41a</p>
+          </div>
+        </div>
 
-            
+      
+        <div class="flex items-start">
+          <div class="bg-blue-100 p-3 rounded-full mr-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800">Telefon</h3>
+            <p class="text-gray-600">+381 638086144</p>
+          </div>
+        </div>
 
-            </div>
-        </section>
+        <div class="flex items-start">
+          <div class="bg-blue-100 p-3 rounded-full mr-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-800">Email</h3>
+            <p class="text-gray-600">primer@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="font-medium text-gray-800">Matični broj: <span class="text-gray-600">22021591</span></h3>
+          <h3 class="font-medium text-gray-800 mt-2">PIB: <span class="text-gray-600">114422858</span></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="lg:col-span-2 space-y-8">
+      
+
+    <div class="bg-white p-8 rounded-lg shadow-md">
+  <h2 class="text-2xl font-bold mb-6">Kontaktirajte nas</h2>
+  <form class="space-y-6">
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-2">Ime</label>
+      <input
+        type="text"
+        name="name"
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+        placeholder="Vaše ime"
+        required
+      />
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+      <input
+        type="email"
+        name="email"
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+        placeholder="Vaš email"
+        required
+      />
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-2">Poruka</label>
+      <textarea
+        name="message"
+        rows="5"
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+        placeholder="Vaša poruka..."
+        required
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300 shadow-md"
+    >
+      Pošalji poruku
+    </button>
+  </form>
+</div>
+      
+
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-4">Lokacija</h2>
+        <div class="aspect-w-16 aspect-h-9 w-full">
+          <iframe 
+            class="w-full h-96 rounded-lg border-0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3085999999997!2d20.44683303562437!3d44.73857908156135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a71835ace020d%3A0xe93f4ba73d93126e!2zTWlsamFrb3ZhxI1rbyBicmRvIDQxYSwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1748201487368!5m2!1ssr!2srs">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</section>
 
 
       </main>
